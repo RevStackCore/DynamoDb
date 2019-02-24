@@ -1,0 +1,19 @@
+{
+  "name": "RevStackCore.DynamoDb",
+  "version": "1.0.0",
+  "description": "DynamoDb implementation of the RevStackCore generic repository pattern",
+  "main": "RevStackCore.DynamoDb.sln",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RevStackCore/DynamoDb.git"
+  },
+  "author": "S. Francis",
+  "license": "MIT",
+  "bugs": {
+		"url": "https://github.com/RevStackCore/DynamoDb/issues"
+  },
+	"homepage": "https://github.com/RevStackCore/DynamoDb"
+}
