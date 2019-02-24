@@ -235,7 +235,7 @@ var result = _repository.Query(x => x.City == "Charlotte").ExecPage(10); //resul
 var result2 = _repository.Query(x => x.City == "Charlotte").ExecPage(10,result.LastEvaluatedKey); //result.Data==Next page of List<T> 10 items
 
 ```
-#Scans 
+# Scans 
 DynamoDbRepository exposes 1 public method for lazy evaluation of scan expressions
 
 ```cs
