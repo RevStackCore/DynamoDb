@@ -34,12 +34,12 @@ namespace RevStackCore.DynamoDb
             _db.DeleteByItem<TEntity>(entity);
         }
 
-        public void Delete(TKey id)
+        public void Delete(object id)
         {
             _db.DeleteItem<TEntity>(id);
         }
 
-        public void Delete(TKey id, object range)
+        public void Delete(object id, object range)
         {
             _db.DeleteItem<TEntity>(id,range);
         }
@@ -85,7 +85,12 @@ namespace RevStackCore.DynamoDb
             return _db.GetItem<TEntity>(id);
         }
 
-        public TEntity GetById(TKey id, object range)
+        public TEntity GetByHashId(object id)
+        {
+            return _db.GetItem<TEntity>(id);
+        }
+
+        public TEntity GetById(object id, object range)
         {
             return _db.GetItem<TEntity>(id,range);
         }

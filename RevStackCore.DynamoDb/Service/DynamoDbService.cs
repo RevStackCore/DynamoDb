@@ -39,12 +39,12 @@ namespace RevStackCore.DynamoDb
             _repository.Delete(entity);
         }
 
-        public void Delete(TKey id)
+        public void Delete(object id)
         {
             _repository.Delete(id);
         }
 
-        public void Delete(TKey id, object range)
+        public void Delete(object id, object range)
         {
             _repository.Delete(id, range);
         }
@@ -54,12 +54,12 @@ namespace RevStackCore.DynamoDb
             return Task.Run(() => Delete(entity));
         }
 
-        public Task DeleteAsync(TKey id)
+        public Task DeleteAsync(object id)
         {
             return Task.Run(() => Delete(id));
         }
 
-        public Task DeleteAsync(TKey id, object range)
+        public Task DeleteAsync(object id, object range)
         {
             return Task.Run(() => Delete(id,range));
         }
@@ -89,7 +89,12 @@ namespace RevStackCore.DynamoDb
             return _repository.GetById(id);
         }
 
-        public TEntity GetById(TKey id, object range)
+        public TEntity GetByHashId(object id)
+        {
+            return _repository.GetByHashId(id);
+        }
+
+        public TEntity GetById(object id, object range)
         {
             return _repository.GetById(id, range);
         }
@@ -99,7 +104,12 @@ namespace RevStackCore.DynamoDb
             return Task.FromResult(GetById(id));
         }
 
-        public Task<TEntity> GetByIdAsync(TKey id, object range)
+        public Task<TEntity> GetByHashIdAsync(object id)
+        {
+            return Task.FromResult(GetByHashId(id));
+        }
+
+        public Task<TEntity> GetByIdAsync(object id, object range)
         {
             return Task.FromResult(GetById(id, range));
         }

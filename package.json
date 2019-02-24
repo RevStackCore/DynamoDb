@@ -1,6 +1,6 @@
 {
   "name": "RevStackCore.DynamoDb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DynamoDb implementation of the RevStackCore generic repository pattern",
   "main": "RevStackCore.DynamoDb.sln",
   "scripts": {

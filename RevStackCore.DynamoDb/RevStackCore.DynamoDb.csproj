@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>RevStackCore.DynamoDb</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Authors>Scott Francis</Authors>
     <Company>MIS</Company>
     <Description>DynamoDb implementation of the RevStackCore generic repository pattern</Description>
