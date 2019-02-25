@@ -27,7 +27,7 @@ public interface IRepository<TEntity, TKey> where TEntity : class, IEntity<TKey>
  public interface IDynamoDbRepository<TEntity,TKey> : IRepository<TEntity,TKey> where TEntity:class, IEntity<TKey>
  {
      IPocoDynamo DbClient { get;  }
-     TEntity GetByHashId(object id, object range);
+     TEntity GetByHashId(object id);
      TEntity GetById(object id, object range);
      void Delete(object id);
      void Delete(object id, object range);
