@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>RevStackCore.DynamoDb</PackageId>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <Authors>Scott Francis</Authors>
     <Company>MIS</Company>
     <Description>DynamoDb implementation of the RevStackCore generic repository pattern</Description>
@@ -11,6 +11,7 @@
     <PackageLicenseUrl>https://github.com/RevStackCore/DynamoDb/blob/master/LICENSE</PackageLicenseUrl>
     <PackageIconUrl>https://s3.amazonaws.com/revstack/icons/revstackcore-64x64.png</PackageIconUrl>
     <Copyright>Copyright 2019</Copyright>
+    <ReleaseVersion>1.0.2</ReleaseVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="RevStackCore.Pattern" Version="1.0.5" />
-    <PackageReference Include="RevStackCore.DynamoDb.Client" Version="1.0.0" />
+    <PackageReference Include="RevStackCore.DynamoDb.Client" Version="1.0.1" />
   </ItemGroup>
 </Project>
